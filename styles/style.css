@@ -45,6 +45,25 @@ body {
 }
 
 /* - começo do css da main -- */
+.principal__atuacao {
+    margin: 5% 17% 0 17%;
+}
+
+.titulo {
+    font-family: 'PT Serif', serif;
+    font-size: 5em;
+    font-weight: bold;
+    white-space: nowrap;
+    padding-bottom: 20px;
+}
+
+.subtitulo {
+    font-family: 'PT Serif', serif;
+    font-size: 3.5em;
+    text-align: center;
+    padding: 5% 0 5% 0;
+}
+
 .principal {
     padding-top: 8%;
     margin: 5% 17%;
@@ -95,7 +114,7 @@ body {
 
 .container {
     height: auto;
-    margin: 10% 25%;
+    margin: 10% 35% 10% 25%;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -115,32 +134,133 @@ body {
     vertical-align: middle;
 }
 
-.imagem__rio {
+.imagem__direita {
     display: block;
     text-align: right;
 }
 
+.imagem__esquerda {
+    display: block;
+    text-align: left;
+}
+
+.box__texto__direita {
+    height: auto;
+    margin: 0% 15% 0% 45%;
+    padding: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.box__texto__esquerda {
+    height: auto;
+    margin: 0% 45% 0% 15%;
+    padding: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.box__texto__fonte {
+    font-family: 'PT Serif', serif;
+    font-size: 2em;
+}
+
+#box__botao__direita {
+    display: flex;
+    flex-direction: row;
+    margin: 0% 17% 0% 17%;
+    gap: 45%;
+}
+
+#box__botao__esquerda {
+    display: flex;
+    flex-direction: row;
+    margin: 0% 17% 0% 17%;
+    gap: 45%;
+    padding-bottom: 5%;
+}
+
+.sessao__tributario {
+    display: flex;
+    flex-direction: column;
+    gap: 140px;
+}
+
+.sessao__empresarial {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 140px;
+    background-color: #FAFAFA;
+}
+
+.botao1 {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #FAFAFA;
+    color: #3C3C3B;
+    cursor: pointer;
+    font-size: 1.5em;
+    padding: 0.4rem 1rem;
+    border: solid 4px #3C3C3B;
+    transition: all 0.3s;
+    width: auto;
+    white-space: nowrap;
+    position: absolute;
+
+    &::after {
+        content: "\f30b";
+        font-family: 'Font Awesome\ 5 Free';
+        font-weight: 900;
+        color: black;
+        position: absolute;
+        left: 5%;
+        top: 25%;
+        right: 85%;
+        bottom: 0;
+        opacity: 0;
+    }
+
+    &:hover {
+        transition: all 0.3s;
+        padding: 0.4rem 1rem 0.4rem 3.5rem;
+
+        &::after {
+            opacity: 1;
+            transition: all 0.3s;
+
+        }
+    }
+}
 /* --- começo do css do contato -- */
 .contato {
     display: flex;
     justify-content: center;
 }   
 
-.subtitulo {
-    font-family: 'PT Serif', serif;
-    font-size: 3em;
-    text-align: center;
-    padding: 5% 0 10% 0;
-}
-
 .form__contato {
-    padding: 5% 30%;
+    padding: 5% 35%;
     background: #FAFAFA;
 }
 
 .form__contato form label {
     font-family: 'Open Sans', sans-serif;
-    font-size: 0.8em;
+    font-size: 1em;
     color: #555555;
 }
 
@@ -155,7 +275,7 @@ input[type=text], select, textarea {
     border-bottom: 2px solid #CCC;
     box-sizing: border-box;
     margin-bottom: 6px;
-    margin-top: 5%;
+    margin-top: 7%;
     font-size: 1em; /* Tamanho da fonte dentro da caixa */
     resize: vertical 
 }
