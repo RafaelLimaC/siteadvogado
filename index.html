@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advocacia Daniel Marinho</title>
+    <link rel="stylesheet" href="./styles/style.css"/>
+</head>
+<body>
+    <header class="cabecalho">
+        <h2 class="cabecalho__titulo">Daniel Marinho</h2>
+        <nav class="cabecalho__menu">
+              <a href="#">SOBRE</a>
+              <a href="#">ATUAÇÃO</a>
+              <a href="#">PRO BONO</a>
+              <a href="#">BLOG</a>
+              <a href="#">CONTATO</a>
+        </nav>
+    </header>
+    <main>
+        <div class="principal">
+            <div class="principal__titulo">
+                <h1 class="principal__titulo__texto">Prestação de <strong>serviços jurídicos</strong> de maneira inovadora com comunicação, transparência e soluções criativas</h1>
+            </div>
+            <div class="principal__titulo__botao">         
+                <button>ENTRE EM CONTATO</button>
+                <button>ÁREAS DE ATUAÇÃO</button>
+            </div>
+        </div>
+        <div class="slideshow">
+            <div class="slideshow__container">
+                <div class="slides fade">
+                    <q>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vitae ultrices lorem, ac accumsan erat. In in tristique quam, ut mollis lacus. Curabitur ac consequat augue.</q>
+                    <p class="autor">- BRENO MOTTA CERANTE<br><strong>CERANTE EMPREENDIMENTOS</strong></p>
+                </div>
+                <div class="slides fade">
+                    <q>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dolor lectus, eleifend consectetur diam nec, auctor porta magna. Aenean eget sollicitudin ligula. Proin eu sagittis purus.</q>
+                    <p class="autor">- JAMES MARTUNG<br><strong>FULLTIME</strong></p>
+                </div>
+                <div class="slides fade">
+                    <q>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis tempor augue. Aliquam erat volutpat. Curabitur justo risus, egestas non orci non, euismod ultricies purus. Quisque.</q>
+                    <p class="autor">- CAMILO RAMALHO<br><strong>INSTITUTO DE MEDICINA NUCLEAR</strong></p>
+                </div>
+                <div class="slides fade">
+                    <q>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tincidunt, urna ac consectetur ultrices, nisl tortor porttitor arcu, ut mattis est risus vitae velit. Quisque cursus pellentesque.</q>
+                    <p class="autor">- ISABELA FRANCO<br><strong>IFRANCO ENGENHARIA</strong></p>
+                </div>
+
+                <!-- proximo/anterior botoes laterais -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                <!-- pontinhos indicadores na parte de baixo do slideshow -->
+                <div class="dot__container">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+    <script type="text/javascript" src="main.js"></script>
+</body>
+</html>
