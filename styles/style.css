@@ -191,18 +191,18 @@ body {
 #box__botao__esquerda {
     display: flex;
     flex-direction: row;
-    margin: 0% 17% 0% 17%;
-    gap: 45%;
+    margin: 0% 30% 0% 15%;
+    gap: 30%;
     padding-bottom: 5%;
 }
 
-.sessao__tributario {
+.sessao__direita {
     display: flex;
     flex-direction: column;
     gap: 140px;
 }
 
-.sessao__empresarial {
+.sessao__esquerda {
     margin-top: 5%;
     display: flex;
     flex-direction: column;
@@ -247,6 +247,7 @@ body {
         }
     }
 }
+
 /* --- começo do css do contato -- */
 .contato {
     display: flex;
@@ -256,6 +257,10 @@ body {
 .form__contato {
     padding: 5% 35%;
     background: #FAFAFA;
+}
+
+.form__contato2 {
+    padding: 5% 35%;
 }
 
 .form__contato form label {
@@ -270,7 +275,7 @@ body {
 
 input[type=text], select, textarea {
     width: 100%;
-    background-color: #FAFAFA;
+    background-color: inherit;
     padding: 3px 0;
     border-bottom: 2px solid #CCC;
     box-sizing: border-box;
@@ -281,7 +286,7 @@ input[type=text], select, textarea {
 }
 
 .form__submit {
-    background-color: #FAFAFA;
+    background-color: inherit;
     font-family: 'Open Sans', sans-serif;
     color: #3C3C3B;
     cursor: pointer;
