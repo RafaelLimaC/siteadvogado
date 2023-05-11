@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,600&family=PT+Serif&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-style: none;
+}
+
+body {
+    margin: 0 auto;
+    overflow-y: overlay;
+}
+
+/* -- começo do estilo header -- */
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    margin: 5% 17%;
+    align-items: baseline;
+}
+
+.cabecalho__titulo {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 2em;
+    text-decoration: none;
+    color: #3C3C3B;
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 4%;
+    white-space: nowrap;
+}
+
+.cabecalho__menu a {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    text-decoration: none;
+    color: black;
+}
+
+.pagina__ativa {
+    border-bottom: 2px solid black;
+}
+
+/* - começo do css da main -- */
+.principal {
+    padding-top: 8%;
+    margin: 5% 17%;
+    display: flex;
+    gap: 10%;
+    align-items: center;
+}
+
+.principal__imagem {
+    max-width: 450px;
+}
+
+.principal__conteudo {
+    display: flex;
+    flex-direction: column;
+    gap: 40px
+}
+
+.principal__titulo {
+    font-family: 'PT Serif', serif;
+    font-size: 3.5em;
+    white-space: nowrap;
+}
+
+.principal__conteudo__info {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    font-family: 'PT Serif', serif;
+    font-size: 2em;
+    font-weight: normal;
+}
+
+.principal__menu {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    white-space: nowrap; 
+}
+
+.principal__menu a {
+    font-family: 'PT Serif', serif;
+    font-size: 1em;
+    font-weight: 300;
+    text-decoration: none;
+    color: black;
+}
+
+.container {
+    height: auto;
+    margin: 10% 25%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.container__texto {
+    font-family: 'PT Serif', serif;
+    font-size: 2em;
+    color: black;
+    vertical-align: middle;
+}
+
+.imagem__rio {
+    display: block;
+    text-align: right;
+}
+
+/* --- começo do css do contato -- */
+.contato {
+    display: flex;
+    justify-content: center;
+}   
+
+.subtitulo {
+    font-family: 'PT Serif', serif;
+    font-size: 3em;
+    text-align: center;
+    padding: 5% 0 10% 0;
+}
+
+.form__contato {
+    padding: 5% 30%;
+    background: #FAFAFA;
+}
+
+.form__contato form label {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.8em;
+    color: #555555;
+}
+
+.form__imagem {
+    width: 50%;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    background-color: #FAFAFA;
+    padding: 3px 0;
+    border-bottom: 2px solid #CCC;
+    box-sizing: border-box;
+    margin-bottom: 6px;
+    margin-top: 5%;
+    font-size: 1em; /* Tamanho da fonte dentro da caixa */
+    resize: vertical 
+}
+
+.form__submit {
+    background-color: #FAFAFA;
+    font-family: 'Open Sans', sans-serif;
+    color: #3C3C3B;
+    cursor: pointer;
+    font-size: 1.3em;
+    padding: 0.4rem 0;
+    border-radius: 4px;
+    margin-top: 5%;
+    transition: all 0.3s;
+    width: auto;
+    position: relative;
+    float: right;
+
+    &::after {
+        content: "\f30b";
+        font-family: 'Font Awesome\ 5 Free';
+        font-weight: 900;
+        color: black;
+        position: absolute;
+        left: 65%;
+        top: 25%;
+        right: 5%;
+        bottom: 0;
+        opacity: 0;
+    }
+
+    &:hover {
+        transition: all 0.3s;
+        padding: 0.4rem 3.5rem 0.4rem 1rem;
+        background-color: #CCCCCC;
+
+        &::after {
+            opacity: 1;
+            transition: all 0.3s;
+        }
+    }   
+}
+
+/* -- começo do css do rodape -- */
+.rodape {
+    background-color: #3C3C3B;
+    padding: 5% 17%;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline
+}
+
+.rodape__titulo {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 2em;
+    color: #FAFAFA;
+}
+
+.rodape__menu {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    white-space: nowrap; 
+}
+
+.rodape__menu a {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.8em;
+    font-weight: 300;
+    text-decoration: none;
+    color: #FAFAFA;
+}
+
+.infocontato__rodape {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    white-space: nowrap; 
+}
+
+.infocontato__rodape p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.8em;
+    font-weight: 300;
+    font-weight: normal;
+    color: #FAFAFA;
+}
+
+.infocontato__rodape p strong {
+    font-weight: bold;
+}
+
+.creditos {
+    padding-top: 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.8em;
+    font-weight: 300;
+    font-weight: normal;
+    color: #9a9a9a;
+}
