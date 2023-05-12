@@ -120,11 +120,22 @@ body {
 /* -- começo do css do slideshow -- */
 .slideshow {    
     background: #FAFAFA;
+    height: 90vh;
+    padding: 4% 0 0% 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
 
 .slideshow__container {
     position: relative;
-    margin: 0 19%;
+    margin: 0 20%;
     height: 100vh;
     vertical-align: middle;
 }
