@@ -114,7 +114,7 @@ body {
 
 .container {
     height: auto;
-    margin: 10% 35% 10% 25%;
+    margin: 8% 35% 8% 25%;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -254,6 +254,15 @@ body {
     justify-content: center;
 }   
 
+#pagecontato {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    padding: 0% 35% 5% 35%;
+}
+
 .form__contato {
     padding: 5% 35%;
     background: #FAFAFA;
@@ -264,6 +273,12 @@ body {
 }
 
 .form__contato form label {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    color: #555555;
+}
+
+.form__contato2 form label {
     font-family: 'Open Sans', sans-serif;
     font-size: 1em;
     color: #555555;
@@ -337,6 +352,7 @@ input[type=text], select, textarea {
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
     font-size: 2em;
+    text-decoration: none;
     color: #FAFAFA;
 }
 
