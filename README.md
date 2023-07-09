@@ -1,6 +1,6 @@
 # Site Advocacia
 
-![Imagem do site pomodoro](x)
+![Foto landing page advocacia](x)
 
 ## Descrição
 
